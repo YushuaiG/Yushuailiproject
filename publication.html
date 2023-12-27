@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<!-- css -->
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+<link href="css/jcarousel.css" rel="stylesheet" />
+<link href="css/flexslider.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE TITLE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* Set your desired background color */
+            /*transform: scale(1.7);*/
+			transform-origin: top left; /* 设置缩放的原点为左上角，确保相对位置不变 */
+			overflow-x: hidden;
+			max-width: 160%;
+			transform: translateX(-20px); /* 负值表示向左移动 */
+			zoom: 1.495; /* 将页面放大 1.2 倍，可以根据需要调整值 */
+		}
+
+        .container {
+            position: relative;
+        }
+
+        .background-image {
+            width: 100%; /* Ensure the image takes the full width of the container */
+            height: 44vh; /* Maintain aspect ratio */
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 15px;
+            width: 97.5%;
+            height: 24.98%;
+            background-color: rgba(135, 206, 250, 0.5); /* Sky blue with transparency */
+        }
+
+        .top-left-text,
+        .top-right-text {
+            position: absolute;
+            color: #fff;
+            font-size: 13px; /* Set your desired font size */
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .top-left-text {
+            top: 6px;
+            left: 50px;
+        }
+
+        .top-right-text {
+            top: 6px;
+            right: 50px;
+        }
+
+        .blue-strip {
+            position: absolute;
+            bottom: 0; /* Adjust bottom position as needed */
+            left: 15px;
+            width: 97.4%;
+            height: 30px;
+            background-color: #363636; /* Dark blue */
+            transform: translateY(-137.6vh);
+        }
+
+
+        .centered-text {
+            position: absolute;
+            bottom: 56%;
+            left: 50%;
+            transform: translate(-50%, -450%);
+            color: white;;
+            text-align: center;
+        }
+
+        .white-text {
+            color: #fff;
+        }
+
+        .right-links {
+            position: absolute;
+            top: 50px; /* Adjust top position as needed */
+            right: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .right-link {
+            margin-right: 20px; /* Adjust margin as needed */
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px; /* Set your desired font size */
+            font-weight: bold;
+        }
+
+
+        h1 {
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px;
+			font-size: 14px;
+        }
+
+        li {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-top: 0;
+			font-size: 24px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 100px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button.primary {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        button.secondary {
+            background-color: #0f62bb;
+            color: #fff;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+	<div class="container">
+    <img src="img/P.jpg" alt="" class="background-image">
+    <div class="overlay"></div>
+
+    <div class="top-left-text">Welcome</div>
+    <div class="top-right-text">E-mail: yushuaili@ieee.org</div>
+
+    <div class="blue-strip"></div>
+
+    <div class="centered-text">
+        <p class="white-text" style="font-size: 20px;">SPOCEI: Smart Planning, Operation and Control for Energy Internet</p>
+        <p class="white-text" style="font-size: 14px;">The EU MSCA Individual Fellowship</p>
+    </div>
+
+    <div class="right-links">
+        <a href="index.html" class="right-link">Home</a>
+        <a href="about.html" class="right-link">About</a>
+        <a href="publication.html" class="right-link">Publication</a>
+        <a href="news.html" class="right-link">News</a>
+    </div>
+<!--    <h1>Publication</h1>-->
+
+    <ul>
+        <li>
+            <h2>Digital twin for industrial internet</h2>
+            <p> FUNDAMENTAL RESEARCH</p>
+				 <p>Yushuai Li,Yan Zhang</p>
+            <a href="https://www.keaipublishing.com/en/journals/fundamental-research/"><button class="primary">Full text</button></a>
+            <a href="img/G/Digital%20twin%20for%20industrial%20internet.pdf"><button class="secondary">Gold OPENACCESS</button></a>
+        </li>
+		<li>
+            <h2>Digital Twin Empowered PV Power Prediction</h2>
+            <p> JOURNAL OF MODERN POWER SYSTEMS AND CLEAN ENERGY</p>
+			<p>	Xiaoyu Zhang,Yushuai Li,Tianyi Li,Yonghao Gui,Qiuye Sun,David Wenzhong Gao</p>
+            <a href="https://ieeexplore.ieee.org/document/10322689"><button class="primary">Full text</button></a>
+            <a href="img/G/Digital_Twin_Empowered_PV_Power_Prediction.pdf"><button class="secondary">Gold OPENACCESS</button></a>
+        </li>
+		<li>
+            <h2>Controllable Structure Planning for Energy Internet</h2>
+            <p> 2022 First International Conference on Cyber-Energy Systems and Intelligent Energy (ICCSIE)</p>
+            <p>Yushuai Li,Tianyi Li,Yonghao Gui,David Wenzhong Gao,Yan Zhang</p>
+            <a href="https://ieeexplore.ieee.org/document/10175258"><button class="primary">Full text</button></a>
+            <a href="img/gr/Controllable%20Structure%20Planning%20for%20Energy%20Internet.pdf"><button class="secondary">Green OPENACCESS</button></a>
+        </li>
+		<li>
+            <h2>Distributed Hybrid-Triggering-Based Secure Dispatch Approach for Smart Grid Against DoS Attacks</h2>
+            <p>IEEE TRANSACTIONS ON SYSTEMS, MAN, AND CYBERNETICS: SYSTEMS</p>
+			<p>Yushuai Li,Rufei Ren,Bonan Huang,Rui Wang,Qiuye Sun,David Wenzhong Gao,Huaguang Zhang</p>
+            <a href="https://ieeexplore.ieee.org/document/10002891"><button class="primary">Full text</button></a>
+            <a href="img/gr/Distributed%20Hybrid-Triggering-Based%20Secure.pdf"><button class="secondary">Green OPENACCESS</button></a>
+        </li>
+		<li>
+            <h2>Switched Surplus-Based Distributed Security Dispatch for Smart Grid with Persistent Packet Loss</h2>
+            <p>IEEE INTERNET OF THINGS JOURNAL</p>
+			<p>Rufei Ren,Yushuai Li,Qiuye Sun,Shiliang Zhang, David Wenzhong Gao,Sabita Maharjan</p>
+            <a href="https://ieeexplore.ieee.org/document/10239260"><button class="primary">Full text</button></a>
+            <a href="img/gr/Switched%20Surplus-Based%20Distributed%20Security.pdf"><button class="secondary">Green OPENACCESS</button></a>
+        </li>
+
+        <!-- 其他小标题 -->
+    </ul>
+</div>
+</body>
+</html>

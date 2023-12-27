@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<!-- css -->
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+<link href="css/jcarousel.css" rel="stylesheet" />
+<link href="css/flexslider.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+		font-family: Arial, sans-serif;
+        }
+
+        #container {
+            position: relative;
+        }
+
+        #overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(122, 202, 250, 0.7); /* 天蓝色透明图层 */
+        }
+
+        #topLeftText, #topRightText {
+            position: absolute;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        #topLeftText {
+            top: 18px;
+            left: 75px;
+        }
+
+        #topRightText {
+            top: 18px;
+            right: 75px;
+        }
+
+
+        #blueStripe {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transform: translateY(-1925%);
+            background-color: #363636;
+            height: 35px;
+            width: 100%; /* 初始宽度 */
+            transition: width 0.3s ease; /* 添加宽度变化的过渡效果 */
+        }
+
+        #centeredText {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translate(-50%, -523%);
+            text-align: center;
+            color: white;
+        }
+
+        #text1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        #text2 {
+            font-size: 18px;
+        }
+
+        #rightAlignedText {
+            position: absolute;
+            bottom: 60px;
+            right: 20px;
+            color: white;
+        }
+
+        .linkText {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 18px;
+            position: absolute;
+            bottom: 620px; /* 调整距离底部的位置 */
+            right: 20px;
+            display: flex;
+            flex-direction: row;
+            font-weight: bold;
+        }
+                </style>
+            
+            
+            
+            <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            text-align: right;
+        }
+            
+            section {
+            position: relative;
+            text-align: left;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        h1, h2, p {
+            margin: 0;
+            text-align: right;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+
+    </style>
+    <title>My Webpage</title>
+</head>
+<body>
+
+<div id="container">
+
+	<img src="img/A.jpg" alt="" width="1952" height="760">
+
+    <div id="overlay"></div>
+    <div id="topLeftText">Welcome</div>
+    <div id="topRightText">E-mail: yushuaili@ieee.org</div>
+    <div id="blueStripe"></div>
+    <div id="centeredText">
+        <div id="text1">SPOCEI: Smart Planning, Operation and Control for Energy Internet</div>
+        <div id="text2">The EU MSCA Individual Fellowship</div>
+    </div>
+    <div id="rightAlignedText">
+        <a href="index.html" class="linkText" style="right: 320px;">Home</a>
+        <a href="about.html" class="linkText" style="right: 230px;">About</a>
+        <a href="publication.html" class="linkText" style="right: 95px;">Publication</a>
+        <a href="news.html" class="linkText" style="right: 15px;">News</a>
+    </div>
+    
+    
+    <section>
+    <div class="overlay"></div>
+    <h1>About</h1>
+    <img src="img/A1.jpg" alt="">
+    <h2>Motivation</h2>
+    <p>The European Union’s (EU) renewable energy directive aims to achieve at least 32% of its total energy needs with renewables and at least 32.5% energy savings by 2030. It is encouraged to develop distributed and smart technologies to fulfil the EU’s energy union strategy, such as flexibility markets helping to incentivize changes in energy supply and demand, next generation of low-carbon energy technologies and the application of AI technologies, etc. As mentioned above, the emerging Energy Internet (EI) provides potential and feasible solutions to developing sustainable and environmentally friendly energy resources, hybrid energy utilization model, flexible energy management and secure system control, which fits well with the EU energy development strategy. Moreover, all the research topics (i.e., the structure planning, distributed optimal control and trading operation) are the key research and fundamental issues in EI, which are eager to be solved to achieve the envisioned EI conception and promote energy development in Europe.</p>
+    <h2>Abstract</h2>
+    <p>The planning, operation and control is of importance to the EI. With large numbers of energy routers (ERs) integrated into EI, the EI system becomes more complex and variable. This state of affairs renders it is necessary to develop new architecture, modelling, optimization and control methods, in order to achieve intelligent, distributed, reliable, flexible and cooperative system operation for EI. To this end, the researcher proposes the following three unique researcher actions  in this project, including: 1) controllable structure planning for multi-ER-based EI under different environments (before and  after fault) from the concept of controllability view; 2) distributed and adaptive cooperated control strategies based on deep  policy gradient algorithm to enable each microgrid adaptively to respond to the system model switching without the need of  exact system dynamics; 3) multiple timescale power trading model and distributed optimization algorithm to achieve both  optimal energy generation/consumption and optimal energy flow allocation among ER with faster convergence rate in  different timescales. </p>
+    <h2>Project Information</h2>
+       <img src="img/A2.jpg" alt="">
+    <p>Principal Investigator: Yushuai Li</p>
+    <p>Project Supervisor: Prof. Yan Zhang</p>
+    <p>Host: University of Oslo</p>
+    <p>This project has received funding from the European Union's Horizon 2020 research and innovation program under the Marie Skłodowska-Curie Actions (Grant No. 101023244).</p>
+</section>
+    
+    
+</div>
+
+</body>
+</html>

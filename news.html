@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<!-- css -->
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+<link href="css/jcarousel.css" rel="stylesheet" />
+<link href="css/flexslider.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Webpage</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #header {
+            position: relative;
+            height: 800px;
+            background-image: url('img/N.jpg'); /* 替换为你的图片路径 */
+            background-size: cover;
+        }
+
+        #overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(135, 206, 250, 0.5); /* 天蓝色透明图层 */
+        }
+
+        #leftText, #rightText {
+            position: absolute;
+            font-weight: bold;
+            color: white;
+            font-size: 16px;
+        }
+
+ 	#leftText {
+            top: 18px;
+            left: 75px;
+        }
+
+        #rightText {
+            top: 18px;
+            right: 75px;
+        }
+
+
+        #stripe {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 35px;
+            background-color: #363636;
+            left: 0;
+            transform: translateY(-2637%);
+            transition: width 0.3s ease; /* 添加宽度变化的过渡效果 */
+        }
+
+        #stripeContent {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translate(-50%, -850%);
+            color: white;
+            text-align: center;
+        }
+
+        #smallText1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        #smallText2 {
+            font-size: 18px;
+        }
+
+        #links {
+            position: absolute;
+            bottom: 930px;
+            right: 20px;
+            color: white;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .link {
+            margin-right: 20px;
+            font-size: 18px;
+            cursor: pointer;
+            color: white;
+            text-decoration: none; /* 去除下划线 */
+            font-weight: bold;
+        }
+
+        #content {
+        	display: flex;
+            flex-direction: column; /* 更改为纵向排列 */
+            align-items: flex-start; /* 左对齐 */
+            text-align: left; /* 左对齐 */
+            margin-top: 20px;
+            margin-left: 450px; /* 调整距离最左边的距离 */
+        }
+
+        .section {
+            box-sizing: border-box; /* 调整padding和width不导致溢出 */
+            margin-bottom: 50px; /* 调整每部分与上一部分的间距 */
+            width: 100%; /* 充满宽度 */
+            padding: 20px;
+            
+        }
+
+        .bigText {
+            font-size: 36px;
+            color: #3582aa;
+            margin-bottom: 20px; /* 大字体与小字体的间距 */
+        }
+
+        .smallTextBlack, .smallTextBlue {
+            font-size: 16px;
+            color: black;
+            display: inline-block; /* 使小字体在同一行 */
+        }
+
+        .smallTextBlue {
+            font-size: 16px;
+            color: #2f66aa;
+            cursor: pointer;
+            text-decoration: none; /* 去除下划线 */
+        }
+    </style>
+</head>
+<body>
+
+
+    <div id="header">
+        <div id="overlay"></div>
+        <div id="leftText">Welcome</div>
+        <div id="rightText">E-mail: yushuaili@ieee.org</div>
+    </div>
+
+    <div id="stripe"></div>
+    <div id="stripeContent">
+        <div id="smallText1">SPOCEI: Smart Planning, Operation and Control for Energy Internet</div>
+        <div id="smallText2">The EU MSCA Individual Fellowship</div>
+    </div>
+
+    <div id="links">
+        <a href="index.html" class="link">Home</a>
+        <a href="about.html" class="link">About</a>
+        <a href="publication.html" class="link">Publication</a>
+        <a href="news.html" class="link">News</a>
+    </div>
+
+    <div id="content">
+        <div class="section">
+            <div class="bigText">Best paper award</div>
+            <div class="smallTextBlack">Controllable Structure Planning for Energy Internet</div>
+            <div class="smallTextBlue">
+        <a href="news1.html" class="smallTextBlue">Read More</a>
+    </div>
+        </div>
+        
+        <div class="section">
+            <div class="bigText">Excellent Young Expert Award from MPCE</div>
+            <div class="smallTextBlack">Personal Honor</div>
+            <div class="smallTextBlue">
+        <a href="news2.html" class="smallTextBlue">Read More</a>
+    </div>
+        </div>
+        
+        <div class="section">
+            <div class="bigText">Excellent Reviewer from MPCE</div>
+            <div class="smallTextBlack">Personal Honor</div>
+            <div class="smallTextBlue">
+        <a href="news3.html" class="smallTextBlue">Read More</a>
+    </div>
+        </div>
+    </div>
+
+</body>
+</html>
