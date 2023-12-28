@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<!-- css -->
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+<link href="css/jcarousel.css" rel="stylesheet" />
+<link href="css/flexslider.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      position: relative;
+      text-align: left;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: -326.6px;
+      width: 155.9%;
+      height: 33%;
+      background: rgba(135, 206, 250, 0.5); /* 天蓝色透明图层 */
+    }
+
+    .text-left, .text-right {
+      position: absolute;
+      top: 20px;
+      color: white;
+      font-size: 20px; /* 调整文字大小 */
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    .text-left {
+        top: 20px;
+        left: 5px;
+    }
+
+    .text-right {
+        top: 20px;
+        right: 5px;
+    }
+
+    .blue-bar {
+      position: absolute;
+      bottom: 0;
+      width: 155.8%;
+      height: 45px;
+      background-color: #363636; /* Dark blue */
+      transform: translateY(-5148%);
+      left: -326px
+    }
+
+    .center-text {
+      position: absolute;
+      bottom: 2000px;
+      width: 100%;
+      text-align: center;
+      color: white;
+      line-height: 1.5; /* 调整行间距，可以根据需要设置不同的值 */
+    }
+
+    .link-text {
+      color: white;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+        .right-links {
+            position: absolute;
+            top: 80px; /* Adjust top position as needed */
+            right: -300px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .right-link {
+            margin-right: 20px; /* Adjust margin as needed */
+            color: #fff;
+            text-decoration: none;
+            font-size: 26px; /* Set your desired font size */
+            font-weight: bold;
+        }
+
+    .content {
+      text-align: left;
+      padding: 20px;
+    }
+
+
+
+  </style>
+  <title>Your Page Title</title>
+</head>
+<body>
+  <div class="container">
+    <img src="img/slides/1.jpg" alt="" width="160%" style="margin-left: -342px">
+    <div class="overlay"></div>
+    <div class="text-left" style="left: -250px">Welcome</div>
+    <div class="text-right" style="right: -250px">E-mail: yushuaili@ieee.org</div>
+    <div class="blue-bar"></div>
+    <div class="center-text">
+      <p  style="font-size: 30px;">SPOCEI: Smart Planning, Operation and Control for Energy Internet</p>
+      <p  style="font-size: 21px;">The EU MSCA Individual Fellowship</p>
+    </div>
+
+    <div class="right-links">
+        <a href="index.html" class="right-link">Home</a>
+        <a href="about.html" class="right-link">About</a>
+        <a href="publication.html" class="right-link">Publication</a>
+        <a href="news.html" class="right-link">News</a>
+    </div>
+
+    <div class="content">
+      <h1>About</h1>
+      <img src="img/A1.jpg" alt=" " width="80%" style="margin-left: 60px">
+      <h2>Motivation</h2>
+      <p  style="font-size: 18px;">The European Union’s (EU) renewable energy directive aims to achieve at least 32% of its total energy needs with renewables and at least 32.5% energy savings by 2030. It is encouraged to develop distributed and smart technologies to fulfil the EU’s energy union strategy, such as flexibility markets helping to incentivize changes in energy supply and demand, next generation of low-carbon energy technologies and the application of AI technologies, etc. As mentioned above, the emerging Energy Internet (EI) provides potential and feasible solutions to developing sustainable and environmentally friendly energy resources, hybrid energy utilization model, flexible energy management and secure system control, which fits well with the EU energy development strategy. Moreover, all the research topics (i.e., the structure planning, distributed optimal control and trading operation) are the key research and fundamental issues in EI, which are eager to be solved to achieve the envisioned EI conception and promote energy development in Europe.</p>
+      <h2>Abstract</h2>
+      <p  style="font-size: 18px;">The planning, operation and control is of importance to the EI. With large numbers of energy routers (ERs) integrated into EI, the EI system becomes more complex and variable. This state of affairs renders it is necessary to develop new architecture, modelling, optimization and control methods, in order to achieve intelligent, distributed, reliable, flexible and cooperative system operation for EI. To this end, the researcher proposes the following three unique researcher actions  in this project, including: 1) controllable structure planning for multi-ER-based EI under different environments (before and  after fault) from the concept of controllability view; 2) distributed and adaptive cooperated control strategies based on deep  policy gradient algorithm to enable each microgrid adaptively to respond to the system model switching without the need of  exact system dynamics; 3) multiple timescale power trading model and distributed optimization algorithm to achieve both  optimal energy generation/consumption and optimal energy flow allocation among ER with faster convergence rate in  different timescales. </p>
+      <h2>Project Information</h2>
+        <img src="img/A2.jpg" alt="" width="80%" style="margin-left: 60px">
+      <p  style="font-size: 18px;">Principal Investigator: Yushuai Li</p>
+      <p  style="font-size: 18px;">Project Supervisor: Prof. Yan Zhang</p>
+        <p  style="font-size: 18px;">Host: University of Oslo</p>
+      <p  style="font-size: 18px;">This project has received funding from the European Union's Horizon 2020 research and innovation program under the Marie Skłodowska-Curie Actions (Grant No. 101023244).</p>
+    </div>
+  </div>
+</body>
+</html>
